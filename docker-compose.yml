@@ -1,0 +1,41 @@
+
+version: "3.8"
+services:
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: kamil_server
+      POSTGRES_PASSWORD: !kdcServer22
+      POSTGRES_DB: test
+#    ports:
+#      - "5332:5432"
+#  pgadmin:
+#    container_name: pgadmin4_demoJDBC
+#    image: dpage/pgadmin4
+#    restart: always
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: shurie@gmail.com
+#      PGADMIN_DEFAULT_PASSWORD: root
+#    ports:
+#      - "5050:80"
+
+
+##version: '3.8'
+#
+#services:
+#
+#  pgadmin:
+#    image: dpage/pgadmin4
+#    restart: unless-stopped
+#    ports:
+#      - "5050:80"
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: dev@wentilyon.com
+#      PGADMIN_DEFAULT_PASSWORD: dev123
+#    volumes:
+#      - pgadmin_data:/var/lib/pgadmin
+#
+#volumes:
+#  pgadmin_data:
