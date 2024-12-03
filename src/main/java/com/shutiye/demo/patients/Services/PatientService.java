@@ -1,12 +1,9 @@
 package com.shutiye.demo.patients.Services;
-
 import com.shutiye.demo.patients.entities.Patients;
 import com.shutiye.demo.patients.repositories.PatientRepository;
-import com.shutiye.demo.student.entities.Student;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
 @Service
 public class PatientService {
     private final PatientRepository patientRepository;

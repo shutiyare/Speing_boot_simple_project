@@ -1,7 +1,8 @@
 package com.shutiye.demo.courses;
 
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.Repository;
-@org.springframework.stereotype.Repository
+import org.springframework.stereotype.Repository;
+
+@Repository
 public interface CoursesRepository  extends CrudRepository<Courses,Integer> {
 }

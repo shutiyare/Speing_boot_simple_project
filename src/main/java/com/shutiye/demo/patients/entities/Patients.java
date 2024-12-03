@@ -31,7 +31,7 @@ public class Patients {
     public Patients(){}
 
     public Patients( Long id,String patient_name, int age, String gender, String email, int phone_number, String address) {
-        this.patient_id=id;
+//        this.patient_id=id;
         this.patientname = patient_name;
         this.age = age;
         this.gender = gender;
@@ -104,7 +104,7 @@ public class Patients {
     public String toString() {
         return "Patients{" +
                 "patientId=" + patient_id +
-                "patient_name=" + patientname +
+                "patientname=" + patientname +
                 ", age=" + age +
                 ", gender='" + gender + '\'' +
                 ", email='" + email + '\'' +

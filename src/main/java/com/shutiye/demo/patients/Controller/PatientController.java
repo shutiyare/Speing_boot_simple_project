@@ -2,7 +2,6 @@ package com.shutiye.demo.patients.Controller;
 
 import com.shutiye.demo.patients.Services.PatientService;
 import com.shutiye.demo.patients.entities.Patients;
-import com.shutiye.demo.student.entities.Student;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

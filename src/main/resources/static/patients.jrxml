@@ -1,0 +1,167 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="patients" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3e8d1cd2-0cb1-4426-82a1-c29d709a42a4">
+    <property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="demo Data Adapter"/>
+    <style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+            <topPen lineWidth="0.5" lineColor="#000000"/>
+            <leftPen lineWidth="0.5" lineColor="#000000"/>
+            <bottomPen lineWidth="0.5" lineColor="#000000"/>
+            <rightPen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+            <topPen lineWidth="0.5" lineColor="#000000"/>
+            <leftPen lineWidth="0.5" lineColor="#000000"/>
+            <bottomPen lineWidth="0.5" lineColor="#000000"/>
+            <rightPen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+            <topPen lineWidth="0.5" lineColor="#000000"/>
+            <leftPen lineWidth="0.5" lineColor="#000000"/>
+            <bottomPen lineWidth="0.5" lineColor="#000000"/>
+            <rightPen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <parameter name="Parameter1" class="net.sf.jasperreports.engine.data.JRAbstractBeanDataSource"/>
+    <query language="SQL"><![CDATA[SELECT * FROM patients]]></query>
+    <field name="patient_id" class="java.lang.Long">
+        <property name="com.jaspersoft.studio.field.name" value="patient_id"/>
+        <property name="com.jaspersoft.studio.field.label" value="patient_id"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patients"/>
+    </field>
+    <field name="patient_name" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="patien_tname"/>
+        <property name="com.jaspersoft.studio.field.label" value="patien_tname"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patients"/>
+    </field>
+    <field name="age" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="age"/>
+        <property name="com.jaspersoft.studio.field.label" value="age"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patients"/>
+    </field>
+    <field name="email" class="java.lang.String">
+        <property name="com.jaspersoft.studio.field.name" value="email"/>
+        <property name="com.jaspersoft.studio.field.label" value="email"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patients"/>
+    </field>
+    <field name="phone_number" class="java.lang.Integer">
+        <property name="com.jaspersoft.studio.field.name" value="phone_number"/>
+        <property name="com.jaspersoft.studio.field.label" value="phone_number"/>
+        <property name="com.jaspersoft.studio.field.tree.path" value="patients"/>
+    </field>
+    <background splitType="Stretch"/>
+    <title height="100" splitType="Stretch">
+        <element kind="image" uuid="9fe9de11-d0e0-45d0-9969-b59808ae455c" x="27" y="0" width="245" height="80">
+            <expression><![CDATA["/home/shutiye/Downloads/Telegram Desktop/logo.png"]]></expression>
+        </element>
+        <element kind="textField" uuid="c3ace9d5-213a-4ffe-b366-c20e1b7bae00" x="325" y="21" width="215" height="49" fontSize="15.0" pattern="MMMMM dd, yyyy" bold="false" hTextAlign="Right">
+            <expression><![CDATA[new java.util.Date()]]></expression>
+        </element>
+        <element kind="staticText" uuid="aebd0210-8d0f-49d9-9f9a-388f580a0d9b" x="328" y="18" width="125" height="48" fontSize="20.0">
+            <text><![CDATA[Date :]]></text>
+        </element>
+    </title>
+    <pageHeader height="51" splitType="Stretch">
+        <element kind="staticText" uuid="c0e09265-1848-486c-922b-99f61bf5f03a" x="20" y="-10" width="530" height="60" forecolor="#0415B5" fontSize="30.0">
+            <text><![CDATA[Kaamil Diagnostic Center Report]]></text>
+        </element>
+        <element kind="line" uuid="7c56885a-2282-4133-bd61-799d31256f4b" x="20" y="50" width="520" height="1"/>
+    </pageHeader>
+    <detail>
+        <band height="125" splitType="Stretch">
+            <element kind="staticText" uuid="7bb77908-0ccc-4c2e-b554-5d1953cc2df0" x="34" y="-13" width="100" height="30" bold="true" hTextAlign="Center" vTextAlign="Bottom">
+                <text><![CDATA[Name]]></text>
+                <box>
+                    <pen lineWidth="0.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="a2be6ebe-52e9-44d6-80ff-b33051b7c04a" x="-18" y="-13" width="100" height="30" bold="true" hTextAlign="Center" vTextAlign="Bottom">
+                <text><![CDATA[ID]]></text>
+                <box>
+                    <pen lineWidth="0.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="cec1bae0-f8a7-4994-aae1-6ef7d27311d6" x="200" y="-10" width="100" height="30" bold="true" hTextAlign="Center" vTextAlign="Bottom">
+                <text><![CDATA[Phone ]]></text>
+                <box>
+                    <pen lineWidth="0.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="38ebdd57-b874-4185-9726-170371debfd8" x="307" y="-10" width="100" height="30" bold="true" hTextAlign="Center" vTextAlign="Bottom">
+                <text><![CDATA[Email]]></text>
+                <box>
+                    <pen lineWidth="0.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="6ae78efd-18b4-4f5c-90bc-babf32b92f73" x="126" y="-12" width="100" height="30" bold="true" hTextAlign="Center" vTextAlign="Bottom">
+                <text><![CDATA[Age]]></text>
+                <box>
+                    <pen lineWidth="0.0"/>
+                    <topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                    <rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="38092837-c72a-4a4d-aff6-3517d596bdc8" x="22" y="40" width="98" height="36" fontSize="10.0">
+                <expression><![CDATA[$F{patient_id}]]></expression>
+                <box>
+                    <pen lineWidth="0.0"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="2c515be4-df65-46ec-88e9-bf6881c0343d" x="57" y="39" width="98" height="36" fontSize="10.0">
+                <expression><![CDATA[$F{patient_name}]]></expression>
+                <box>
+                    <pen lineWidth="0.0"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="22cf972b-eac4-4f8d-aa21-cdf08726baf5" x="167" y="39" width="98" height="36" fontSize="10.0">
+                <expression><![CDATA[$F{age}]]></expression>
+                <box>
+                    <pen lineWidth="0.0"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="417eeeb1-c8c4-4661-a0ce-3e47730c8299" x="224" y="39" width="98" height="36" fontSize="10.0">
+                <expression><![CDATA[$F{phone_number}]]></expression>
+                <box>
+                    <pen lineWidth="0.0"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="7a53b7a8-5f90-4f45-9c41-04a395ec80f7" x="327" y="39" width="98" height="36" fontSize="10.0">
+                <expression><![CDATA[$F{email}]]></expression>
+                <box>
+                    <pen lineWidth="0.0"/>
+                </box>
+            </element>
+        </band>
+    </detail>
+    <pageFooter height="70" splitType="Stretch"/>
+    <summary height="50" splitType="Stretch">
+        <element kind="textField" uuid="07f3f51d-63e2-41b1-8620-6a6bb17ae53b" x="441" y="20" width="100" height="30" hTextAlign="Center" vTextAlign="Middle">
+            <expression><![CDATA[$V{PAGE_NUMBER}]]></expression>
+        </element>
+    </summary>
+</jasperReport>

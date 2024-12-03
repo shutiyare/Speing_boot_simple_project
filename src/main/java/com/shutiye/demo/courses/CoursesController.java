@@ -1,6 +1,5 @@
 package com.shutiye.demo.courses;
 
-import com.shutiye.demo.student.entities.Student;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

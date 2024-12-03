@@ -25,9 +25,6 @@ public class Courses {
         return updatedat;
     }
 
-
-
-
     public Courses(){}
     public Courses(String coursename, String coursedescription) {
         this.coursename = coursename;
